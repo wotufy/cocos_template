@@ -8,7 +8,7 @@
 
 git地址：https://github.com/leeeklink/cocos_template.git
 
-推荐的 commit id： c0585c5696f0971ffc3a6280c18e9eddaabaa373
+推荐的 commit id： d765362560556afcda7c8364b70cdb1799eafa04
 
 ## 一、用到的知识点： 
 npm script：打包触发方式，用 jenkins 也是可以的
