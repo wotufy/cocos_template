@@ -12,11 +12,6 @@ import { BuilderReplaceFile } from './BuilderReplaceFile';
 import * as chalk from 'chalk';
 import { BuilderPNG } from './BuilderPng';
 
-function handleInput(argv: string[]) {
-    let builder: Builder = new Builder();
-    builder.handle(argv);
-}
-
 class Builder {
 
     public async handle(argv: string[]): Promise<void> {
@@ -96,6 +91,11 @@ class Builder {
         console.log(`处理 env 结束，目标平台: ${chalk.green.bold(BuilderData.gameEnv)}, cocos打包环境选项: ${chalk.green.bold(BuilderData.buildEnv)}\n`);
     }
 
+}
+
+function handleInput(argv: string[]) {
+    let builder: Builder = new Builder();
+    builder.handle(argv);
 }
 
 handleInput(process.argv);
